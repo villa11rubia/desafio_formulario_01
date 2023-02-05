@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Mentoria Paga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- INICIANDO CABEÇALHO/HEADER-->
+    <div class="page">
+    <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para <br> agendar a sua mentoria</p>
+        </header>
+        
+        <form>
+            <!-- CRIAÇÃO DO FIELDSET REFERENTE AS INFORMAÇÕES PESSOAS -->
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <div class="wrappers">
+
+                    <div class="input-wrapper">
+                        <label for="event-name"> Nome </label>
+                        <input minlength="5" type="text" id="event-name" required placeholder="#"/>
+                        
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-last-name"> Sobrenome </label>
+                        <input type="text" id="event-last-name">
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-email"> E-mail <span>(digite um email válido)</span> </label>
+                    <input minlength="8" type="email" id="event-email" required placeholder="#">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-email"> Senha <span>(mínimo de 6 caracteres)</span> </label>
+                    <input type="password" id="event-password" required placeholder="#" minlength="8">
+                </div>
+            </fieldset>
+
+            <!-- CRIAÇÃO DO FIELDSET REFERENTE AS INFORMAÇÕES DO MENTOR -->
+            <fieldset>
+                <legend>Informações do mentor</legend>
+                
+
+                <div class="input-wrapper">
+                    <label for="event-mentor"> Nome do seu mentor <span>(Nome completo)</span> </label>
+                    <input type="text" id="event-name-mentor">
+                </div>
+
+            </fieldset>
+
+            <!-- CRIAÇÃO DO FIELDSET REFERENTE AS INFORMAÇÕES DE HORÁRIOS -->
+            <fieldset class="date-mentor">
+                <legend>Seus horários disponíveis</legend>
+                <div class="border-time"></div>
+
+                <legend>Primeira mentoria</legend>
+                <div class="col-03">
+                    <div class="input-wrapper">
+                        <label for="date-mentor">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Das</label>
+                        <input type="time">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Até</label>
+                        <input type="time">
+                    </div>
+                </div>
+
+                <legend>Segunda mentoria</legend>
+                <div class="col-03">
+
+                    <div class="input-wrapper">
+                        <label for="">Data <span>(DD/MM/AAAA)</label>
+                        <input type="date">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Das</label>
+                        <input type="time">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Até</label>
+                        <input type="time">
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+        
+    </div>
+    <footer>
+        <!-- o tipo SUBMIT envia todos os valores de formulário para um manipulador de formulários-->
+        <input type="submit" form="my-form" value="Salvar Evento" >
+    </footer>
+</body>
+</html>
